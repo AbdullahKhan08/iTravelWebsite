@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navigation bar */
+
+.navbar {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  opacity: 0.78;
+  cursor: pointer;
+  /* height: 300px; */
+}
+
+#logo {
+  display: flex;
+  margin: 6px;
+}
+
+#logo img {
+  height: 47px;
+  width: 50px;
+}
+
+.navbar span {
+  padding-left: 8px;
+  font-family: var(--font1);
+  color: white;
+  color: #000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left ul {
+  display: flex;
+  padding-left: 8em;
+  font-family: var(--font2);
+}
+
+.nav-left ul li {
+  list-style: none;
+  padding: 9px 10px;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#phone img {
+  height: 20px;
+  width: 20px;
+}
+
+/* content  */
+
+.content {
+  height: 100vh;
+}
+
+.content::before {
+  content: "";
+  background-image: url("/img/kuala-lumpur-g3a90f2ea0_1920.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1.15;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  color: white;
+  padding: 15px 10px;
+  position: relative;
+}
+
+.bottom-nav {
+  height: 102px;
+  width: 100%;
+  background-color: rgb(20, 20, 77);
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1; */
+}
+
+.bottom-nav div {
+  display: inline-block;
+}
+
+.bottom-nav span {
+  color: white;
+}
+
+.input {
+  padding: 0px 3px;
+  margin: 5px 5px;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid rgb(58, 58, 161);
+  border-radius: 7px;
+  color: grey;
+  background-color: rgb(20, 20, 77);
+}
+
+.second-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px 23px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images img {
+  height: 300px;
+  width: 300px;
+  padding: 7px 14px;
+}
+
+.footer {
+  padding: 25px 0px;
+  background-color: rgb(9, 9, 43);
+  color: white;
+  text-align: center;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  cursor: pointer;
+}
+.line {
+  width: 33px;
+  background-color: rgb(0, 0, 0);
+  height: 4px;
+  margin: 5px 3px;
+}
